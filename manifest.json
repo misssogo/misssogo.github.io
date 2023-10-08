@@ -1,0 +1,29 @@
+{
+  "short_name": "發音",
+  "name": "俄語發音",
+  "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "dear.html",
+  "background_color": "transparent",
+  "display": "standalone",
+  "orientation": "any",
+  "scope": "./",
+  "theme_color": "transparent",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "dear.russian"
+    }
+  ]
+}

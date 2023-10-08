@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="app.webmanifest">
+    <link rel="manifest" href="manifest.json">
     <title>俄語發音</title>
 
     <style>
@@ -13,22 +13,22 @@
             font-family: sans-serif;
             font-size: 50vmin;
         }
-
+        
         .foot {
             grid-area: 3 / 2 / 4 / 3;
             opacity: 0.3;
         }
-
+        
         .esz1 {
             grid-area: 4 / 2 / 5 / 3;
         }
-
+        
         .grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
             grid-template-rows: auto auto auto auto;
         }
-
+        
         .grid-container>div {
             text-align: center;
         }
@@ -40,11 +40,19 @@
     <div class="grid-container">
         <div id="letter" class="main"></div>
         <div class="foot">
+            <!-- <audio
+            id="sound"
+            controls
+            loop>
+            </audio> -->
             <img id="sound" src="play.png">
+        </div>
+        <div class="esz1">
+            <img id="cme" src="cme.png">
         </div>
     </div>
 
-    <script>
+    <script crossorigin="anonymous">
         function getRandomIntInclusive(min, max) {
             min = Math.ceil(min);
             max = Math.floor(max);
@@ -126,10 +134,12 @@
         var idx = getRandomIntInclusive(0, 32);
         var letter = document.getElementById("letter");
         var sound = document.getElementById("sound");
+        var cme = document.getElementById("cme");
 
         var audio = new Audio(sounds[idx]);
 
         letter.innerHTML = letters[idx];
+        // sound.src = sounds[idx];
         audio.loop = true;
 
         letter.addEventListener("click", event => {
@@ -137,6 +147,7 @@
 
             idx = getRandomIntInclusive(0, 32);
             letter.innerHTML = letters[idx];
+            // sound.src = sounds[idx];
             if (sound.getAttribute('src') == "pause.png") {
                 sound.src = "play.png";
             }
@@ -147,10 +158,14 @@
 
         sound.addEventListener("click", event => {
             event.preventDefault;
+            // console.log(audio.src);
             if (audio.paused) {
+                // letter.innerHTML = letters[idx];
+                // sound.src = sounds[idx];
                 sound.src = "pause.png";
                 if (audio.getAttribute('src') != sounds[idx]) {
                     audio.src = sounds[idx];
+                    // audio.load();
                 }
                 audio.play();
             } else {
@@ -159,8 +174,35 @@
             }
         });
 
+        cme.addEventListener("click", event => {
+            event.preventDefault;
+            fetch("https://finance.yahoo.com/quote/ES=F")
+                .then(response => response.text())
+                .then(text => {
+                    // console.log(text.length);
+                    // console.log(text);
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(text, "text/html");
+                    let el = doc.querySelectorAll("#quote-header-info");
+                    // console.log(el.length);
+                    let chg = parseFloat(el[0].innerText.split("(")[2].split("%")[0]);
+                    // chg = 0.0;
+                    let msg = new SpeechSynthesisUtterance();
+                    msg.text = (chg > 0 ? "漲" : (chg < 0 ? "跌" : "平")) + Math.abs(chg) + "趴";
+                    window.speechSynthesis.speak(msg);
+                });
+        });
+    </script>
+
+    <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register("serviceworker.js");
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('sw.js').then(function(registration) {
+                    console.log('Registered!');
+                }, function(err) {
+                    console.log('Registration failed: ', err);
+                });
+            });
         }
     </script>
 
