@@ -1,5 +1,5 @@
 {
-    "name": "俄語發音",
+    "name": "金枝御液",
     "icons": [{
             "src": "/images/icon-192x192.png",
             "type": "image/png",
@@ -11,7 +11,7 @@
             "sizes": "512x512"
         }
     ],
-    "start_url": "/dear.html",
+    "start_url": "/index.html",
     "display": "standalone",
-    "id": "/dear.html"
+    "id": "/index.html"
 }
