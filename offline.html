@@ -5,49 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>金枝御液™</title>
-  <meta name="theme-color" content="#2F3BA2">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html,
     body {
-      color: #444;
-      font-family: 'Helvetica', 'Verdana', sans-serif;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-font-smoothing: antialiased;
-      height: 100%;
       margin: 0;
       padding: 0;
-      width: 100%;
-    }
-
-    html {
-      overflow: hidden;
-    }
-
-    body {
-      align-content: stretch;
-      align-items: stretch;
-      background: #ececec;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
     }
 
     .main {
-      flex: 1;
-      overflow-x: hidden;
-      overflow-y: auto;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    .offline-image {
-      display: block;
-      margin-bottom: 1.5em;
-      margin-left: auto;
-      margin-right: auto;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media (min-width: 768px) {
+      .main {
+        width: 75%;
+      }
     }
   </style>
 </head>
@@ -772,7 +750,7 @@
         ERAAACAjIAAAQEZAAACAjIAAAAAZAQEAADICAgAAZAQEAADICAgAAJAREAAAICMg
         AABARkAAAICMgAAAABkBAQAAMgICAABkBAQAAMgICAAAkBEQAAAgIyAAAEBGQAAA
         gIyAAAAAGQEBAAAyAgIAAGQEBAAAyAgIAACQERAAACAzWDlgEt9ewPIAAAAASUVO
-        RK5CYII=" alt="很抱歉，您似乎沒有網路連線，這個應用程式需要網路才能使用。" class="offline-image">
+        RK5CYII=" alt="很抱歉，您似乎沒有網路連線，這個應用程式需要網路才能使用。">
   </div>
 </body>
 
