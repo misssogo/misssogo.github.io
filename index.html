@@ -2,54 +2,53 @@
 <html lang="zh-Hant">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="manifest" href="app.webmanifest">
-  <link rel="icon" href="favicon.ico">
-  <title>金枝御液™</title>
-  <style>
-    html {
-      background-color: gray;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="app.webmanifest">
+    <link rel="icon" href="favicon.ico">
+    <title>金枝御液™</title>
+    <style>
+        html {
+            background-color: gray;
+        }
 
-    body {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      background-color: #ececec;
-    }
+        body {
+            background-color: #ececec;
+            margin: 0 auto;
+            max-width: 1200px;
+            width: 100%;
+        }
 
-    header {
-      background: url(images/logo.png) no-repeat center;
-      background-size: 100%;
-      height: 15.625cqmin;
-    }
+        * {
+            margin: inherit;
+        }
 
-    section {
-      padding: 1.25vw;
-    }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
 
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-    }
-  </style>
+        section {
+            padding: 1.25vw;
+        }
+    </style>
 </head>
 
 <body>
-  <header title="金枝御液™橫匾，題字：金枝御液™偵探醫學 Powered by AI。">
-  </header>
-  <main>
-    <section>
-      <img src="images/ad.png" alt="廣告位招租，尺寸：800x480px。">
-    </section>
-  </main>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register("serviceworker.js");
-    }
-  </script>
+    <header>
+        <img src="images/logo.png" alt="金枝御液™橫匾，題字：金枝御液™偵探醫學 Powered by AI。">
+    </header>
+    <main>
+        <section>
+            <img src="images/ad.png" alt="廣告位招租，尺寸：800x480px。">
+        </section>
+    </main>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register("serviceworker.js");
+        }
+    </script>
 </body>
 
 </html>
