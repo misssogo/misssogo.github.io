@@ -1,9 +1,7 @@
 var CACHE_NAME = 'qqbone_assets_0_1_1';
 var CACHE_URLS = [
     '/index.html',
-    '/offline.html',
-    '/dear.html',
-    '/images/about.svg'
+    '/offline.html'
 ];
 
 self.addEventListener('install', event => {
