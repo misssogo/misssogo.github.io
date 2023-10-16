@@ -63,7 +63,14 @@
 <body>
     <script>
         const bodyWidth = document.body.offsetWidth;
+        const screenOrientation = window.screen.orientation;
         document.documentElement.style.setProperty('--proportional-spacing', .015 * bodyWidth + 'px');
+        screenOrientation.addEventListener('change', function (e) {
+            const newBodyWidth = document.body.offsetWidth;
+            console.log(newBodyWidth);
+            document.documentElement.style.setProperty('--proportional-spacing', .015 * newBodyWidth + 'px');
+        });
+
     </script>
     <header>
         <img src="images/brand.svg" alt="金枝御液™橫匾，題字：金枝御液™偵探醫學 Powered by AI。">
