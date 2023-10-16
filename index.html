@@ -17,7 +17,7 @@
             margin: 0 auto;
             max-width: 1200px;
             width: 100%;
-            --proportional-padding: 1.25%;
+            --proportional-padding: 1.33%;
         }
 
         * {
@@ -30,22 +30,74 @@
             object-fit: fill;
         }
 
+        header {
+            top: 0;
+            width: 100%;
+            position: sticky;
+            z-index: 100;
+        }
+
         section {
             padding: var(--proportional-padding);
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: var(--proportional-padding);
+            padding: var(--proportional-padding);
+            padding-top: 0;
+        }
+
+        .cell {
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="金枝御液™橫匾，題字：金枝御液™偵探醫學 Powered by AI。">
+        <img src="images/brand.svg" alt="金枝御液™橫匾，題字：金枝御液™偵探醫學 Powered by AI。">
     </header>
     <main>
         <section>
-            <!-- <img src="images/ad.png" alt="廣告位招租，尺寸：800x480px。"> -->
+            <img src="images/ad.png" alt="廣告位招租，尺寸：800x480px。">
+        </section>
+        <section>
             <img src="images/banner.png" alt="我們幫助患者找到治癒之路，您也能。">
         </section>
     </main>
+    <footer>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+        <div class="cell">
+            <img src="images/about.svg" alt="">
+        </div>
+    </footer>
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register("serviceworker.js");
