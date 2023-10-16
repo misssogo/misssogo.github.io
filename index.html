@@ -8,6 +8,10 @@
     <link rel="icon" href="favicon.ico">
     <title>金枝御液™</title>
     <style>
+        :root {
+            --proportional-spacing: 0;
+        }
+
         html {
             background-color: gray;
         }
@@ -17,7 +21,6 @@
             margin: 0 auto;
             max-width: 1200px;
             width: 100%;
-            --proportional-padding: 1.33%;
         }
 
         * {
@@ -38,7 +41,7 @@
         }
 
         section {
-            padding: var(--proportional-padding);
+            padding: var(--proportional-spacing);
             padding-bottom: 0;
         }
 
@@ -46,8 +49,8 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
-            gap: var(--proportional-padding);
-            padding: var(--proportional-padding);
+            gap: var(--proportional-spacing);
+            padding: var(--proportional-spacing);
         }
 
         .cell {
@@ -58,6 +61,10 @@
 </head>
 
 <body>
+    <script>
+        const bodyWidth = document.body.offsetWidth;
+        document.documentElement.style.setProperty('--proportional-spacing', .015 * bodyWidth + 'px');
+    </script>
     <header>
         <img src="images/brand.svg" alt="金枝御液™橫匾，題字：金枝御液™偵探醫學 Powered by AI。">
     </header>
