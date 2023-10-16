@@ -1,6 +1,5 @@
-var CACHE_NAME = 'qqbone_assets_0_1_5';
+var CACHE_NAME = 'qqbone_assets_0_1_6';
 var CACHE_URLS = [
-    '/serviceworker.js',
     '/offline.html'
 ];
 
