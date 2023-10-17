@@ -9,7 +9,7 @@
     <title>金枝御液™</title>
     <style>
         :root {
-            --proportional-spacing: 0;
+            --proportional-spacing: 1.5vi;
         }
 
         html {
@@ -19,12 +19,13 @@
         body {
             background-color: #ececec;
             margin: 0 auto;
-            max-width: 1200px;
             width: 100%;
+            max-width: 1200px;
         }
 
         * {
             margin: inherit;
+            box-sizing: border-box;
         }
 
         img {
@@ -34,9 +35,9 @@
         }
 
         header {
+            position: sticky;
             top: 0;
             width: 100%;
-            position: sticky;
             z-index: 100;
         }
 
@@ -61,38 +62,27 @@
 </head>
 
 <body>
-    <script>
-        const bodyWidth = document.body.offsetWidth;
-        const screenOrientation = window.screen.orientation;
-        document.documentElement.style.setProperty('--proportional-spacing', .015 * bodyWidth + 'px');
-        screenOrientation.addEventListener('change', function (e) {
-            const newBodyWidth = document.body.offsetWidth;
-            console.log(newBodyWidth);
-            document.documentElement.style.setProperty('--proportional-spacing', .015 * newBodyWidth + 'px');
-        });
-
-    </script>
     <header>
-        <img src="images/brand.svg" alt="金枝御液™橫匾，題字：金枝御液™偵探醫學 Powered by AI。">
+        <img src="images/brand.svg" alt="招牌：金枝御液™偵探醫學 Powered by AI。">
     </header>
     <main>
         <section>
-            <img src="images/ad.png" alt="廣告位招租，尺寸：800x480px。">
+            <img src="images/ad.png" alt="看板：廣告位招租，尺寸：800x480px。">
         </section>
         <section>
-            <img src="images/banner.png" alt="我們幫助患者找到治癒之路，您也能。">
+            <img src="images/banner.png" alt="看板：我們幫助患者找到治癒之路，您也能。">
         </section>
         <section>
-            <img src="images/banner.png" alt="我們幫助患者找到治癒之路，您也能。">
+            <img src="images/banner.png" alt="看板：我們幫助患者找到治癒之路，您也能。">
         </section>
         <section>
-            <img src="images/banner.png" alt="我們幫助患者找到治癒之路，您也能。">
+            <img src="images/banner.png" alt="看板：我們幫助患者找到治癒之路，您也能。">
         </section>
         <section>
-            <img src="images/banner.png" alt="我們幫助患者找到治癒之路，您也能。">
+            <img src="images/banner.png" alt="看板：我們幫助患者找到治癒之路，您也能。">
         </section>
         <section>
-            <img src="images/banner.png" alt="我們幫助患者找到治癒之路，您也能。">
+            <img src="images/banner.png" alt="看板：我們幫助患者找到治癒之路，您也能。">
         </section>
     </main>
     <footer>
