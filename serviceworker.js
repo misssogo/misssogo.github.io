@@ -1,4 +1,4 @@
-var CACHE_NAME = 'qqbone_assets_0_1_16';
+var CACHE_NAME = 'qqbone_assets_0_1_17';
 var CACHE_URLS = [
     '/offline.html'
 ];
