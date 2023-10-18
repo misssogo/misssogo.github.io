@@ -1,13 +1,14 @@
 {
     "lang": "zh-Hant",
     "name": "金枝御液™",
-    "icons": [{
-            "src": "/images/icon-192x192.png",
+    "icons": [
+        {
+            "src": "/logo_192x192.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "/images/icon-512x512.png",
+            "src": "/logo_512x512.png",
             "type": "image/png",
             "sizes": "512x512"
         }
