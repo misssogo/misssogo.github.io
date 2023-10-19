@@ -1,6 +1,7 @@
 var CACHE_NAME = 'qqbone_assets_0_1_20';
 var CACHE_URLS = [
-    '/offline.html'
+    '/offline.html',
+    '/images/Iansui-Regular.ttf'
 ];
 
 self.addEventListener('install', event => {
