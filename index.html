@@ -10,7 +10,9 @@
     <title>金枝御液™</title>
     <style>
         :root {
-            --proportional-spacing: 0.5vi;
+            --golden-ratio: 1.618;
+            --line-length: 75;
+            --proportional-spacing: calc(100vi / var(--line-length) / var(--golden-ratio));
         }
 
         html {
