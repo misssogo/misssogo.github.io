@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>力不從心　患者感言</title>
     <style>
+        :root {
+            --proportional-spacing: 0.382rem;
+        }
+
         @font-face {
             font-family: "芫荽";
             src:
@@ -13,10 +17,6 @@
                 local("Iansui-Regular"),
                 url("/images/Iansui-Regular.ttf");
             line-gap-override: 38.2%;
-        }
-
-        :root {
-            --proportional-spacing: 0.382rem;
         }
 
         html {
@@ -29,17 +29,6 @@
             margin: 0 auto;
             width: 100%;
             max-width: 1200px;
-        }
-
-        * {
-            margin: inherit;
-            box-sizing: border-box;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
         }
 
         header {
@@ -73,6 +62,16 @@
             grid-template-rows: repeat(3, 1fr);
             gap: var(--proportional-spacing);
             padding: var(--proportional-spacing);
+        }
+
+        * {
+            margin: inherit;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
         }
 
         footer>img {
