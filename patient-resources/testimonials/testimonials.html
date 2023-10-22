@@ -12,13 +12,11 @@
                 local("Iansui Regular"),
                 local("Iansui-Regular"),
                 url("/images/Iansui-Regular.ttf");
-            line-gap-override: calc(100% / 3);
+            line-gap-override: 38.2%;
         }
 
         :root {
-            --golden-ratio: 1.618;
-            --line-length: 75;
-            --proportional-spacing: calc(100vi / var(--line-length) / var(--golden-ratio));
+            --proportional-spacing: calc(38.2vi / 75);
         }
 
         html {
@@ -65,7 +63,7 @@
         }
 
         p::first-letter {
-            font-size: calc(1em * var(--golden-ratio));
+            font-size: 1.618em;
             color: brown;
         }
 
