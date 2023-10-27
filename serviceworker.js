@@ -1,4 +1,4 @@
-var CACHE_NAME = 'qqbone_assets_1_3_5';
+var CACHE_NAME = 'qqbone_assets_1_3_6';
 var CACHE_URLS = [
     '/offline.html',
     '/images/Iansui-Regular.ttf'
