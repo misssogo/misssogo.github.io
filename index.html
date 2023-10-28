@@ -20,6 +20,7 @@
 
         :root {
             --proportional-spacing: 0.618rem;
+            --line-length: 20;
         }
 
         body {
@@ -60,7 +61,7 @@
         }
 
         .paint>img {
-            max-width: calc(1.618em * 18.5);
+            max-width: calc(1.618em * var(--line-length));
         }
 
         .learn>img {
