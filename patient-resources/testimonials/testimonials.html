@@ -4,10 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>力不從心　患者感言</title>
+    <title>患者感言</title>
     <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: gray;
+        }
+
         :root {
-            --proportional-spacing: 0.382rem;
+            --proportional-spacing: 0.618rem;
         }
 
         @font-face {
@@ -19,16 +28,12 @@
             line-gap-override: 38.2%;
         }
 
-        html {
-            background-color: gray;
-        }
-
         body {
             font-family: "芫荽", 微軟正黑體 !important;
             background-color: #ececec;
-            margin: 0;
+            margin: 0 auto;
             width: 100%;
-            max-width: 1200px;
+            max-width: 800px;
         }
 
         header {
@@ -64,18 +69,13 @@
             padding: var(--proportional-spacing);
         }
 
-        * {
-            margin: inherit;
-            box-sizing: border-box;
-        }
-
         img {
             width: 100%;
             height: 100%;
         }
 
         img.illustration {
-            width: 10em;
+            width: 38.2%;
             padding: var(--proportional-spacing);
             float: left;
         }
