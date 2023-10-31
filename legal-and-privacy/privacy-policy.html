@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>隱私聲明</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: gray;
+        }
+
+        :root {
+            --proportional-spacing: 0.618rem;
+        }
+
+        @font-face {
+            font-family: "芫荽";
+            src:
+                local("Iansui Regular"),
+                local("Iansui-Regular"),
+                url("/images/Iansui-Regular.ttf");
+            line-gap-override: 38.2%;
+        }
+
+        body {
+            font-family: 標楷體, "芫荽", 微軟正黑體 !important;
+            background-color: #ececec;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        section {
+            padding: var(--proportional-spacing);
+            padding-bottom: 0;
+        }
+
+        article {
+            background-color: white;
+            font-size: larger;
+            text-align: justify;
+            padding: var(--proportional-spacing);
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: var(--proportional-spacing);
+            padding: var(--proportional-spacing);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header>img {
+            box-shadow: 0 0.618rem 0.382rem -0.382rem rgba(255, 215, 0, 0.382);
+        }
+
+        ol {
+            list-style-type: trad-chinese-informal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="/images/brand.svg" alt="招牌：金枝御液™偵探醫學 Powered by AI。">
+    </header>
+    <main>
+        <section>
+            <article>
+                <p>我們非常重視您的隱私權，特此說明本網站之隱私權政策。</p>
+                <p>隱私權政策之聲明</p>
+                <ol>
+                    <li>本聲明不適用於本網站連結之第三方網站。</li>
+                    <li>本網站不蒐集您的個人資料。</li>
+                    <li>本網站不使用Cookie或類似技術。</li>
+                    <li>本網站盡合理之努力使用安全防護措施以保護您的隱私。</li>
+                    <li>本網站將不時修訂隱私權政策並公布之。</li>
+                    <li>如您對本網站之隱私權政策有任何問題，請與我們聯繫。</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div></div>
+        <a href="#" id="goBackLink">
+            <img src="/images/return.svg" alt="">
+        </a>
+        <script>
+            document.getElementById("goBackLink").addEventListener("click", e => {
+                e.preventDefault();
+                history.back();
+            });
+        </script>
+        <div></div>
+        <div></div>
+        <a href="/">
+            <img src="/images/house.svg" alt="">
+        </a>
+        <div></div>
+        <img src="/images/copyright.svg" alt="">
+        <div></div>
+        <div></div>
+
+    </footer>
+</body>
+
+</html>
