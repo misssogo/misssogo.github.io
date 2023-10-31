@@ -130,13 +130,20 @@
 
                 最後，如果你或你的朋友、家人有膝關節方面的問題，我建議你們可以通過添加李時珍的LINE進行諮詢，或者嘗試這種神秘的治療方法。我深知膝關節疼痛所帶來的痛苦，因此我希望能幫助更多人擺脫這種痛苦，同時弘揚中醫文化，讓更多人重拾健康和快樂的生活。縱然逆境困難，奇蹟也許正在等待著我們，這是我個人經歷的故事，也希望能激勵著更多人。
             </p>
+            <img src="/images/fictitious.svg" alt="">
         </section>
     </main>
     <footer>
         <div></div>
-        <a href="#">
+        <a href="#" id="goBackLink">
             <img src="/images/return.svg" alt="">
         </a>
+        <script>
+            document.getElementById("goBackLink").addEventListener("click", e => {
+                e.preventDefault();
+                history.back();
+            });
+        </script>
         <div></div>
         <div></div>
         <a href="/">
