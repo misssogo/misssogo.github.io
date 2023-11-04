@@ -40,6 +40,8 @@
         section {
             padding: var(--proportional-spacing);
             padding-bottom: 0;
+            display: flex;
+            flex-direction: column;
         }
 
         footer {
@@ -55,12 +57,12 @@
             height: 100%;
         }
 
-        p {
+        section>div {
             background-color: #e3f8f4;
             text-align: center;
         }
 
-        header>img {
+        #brand {
             box-shadow: 0 0.618rem 0.382rem -0.382rem rgba(255, 215, 0, 0.382);
         }
 
@@ -78,33 +80,33 @@
 
 <body>
     <header>
-        <img src="images/brand.svg" alt="招牌：金枝御液™偵探醫學 Powered by AI。">
+        <img id="brand" src="images/brand.svg" alt="招牌：金枝御液™偵探醫學 Powered by AI。">
     </header>
     <main>
         <section>
-            <p><img src="images/dwarf_jade.png" alt="看板：維梅爾風格之金枝玉葉盆景樹畫作。"></p>
-            <p><img class="description" src="images/painting.svg" alt="看板：畫評。"></p>
+            <img src="images/dwarf_jade.png" alt="看板：維梅爾風格之金枝玉葉盆景樹畫作。">
+            <div><img class="description" src="images/painting.svg" alt="看板：畫評。"></div>
         </section>
         <section>
-            <p><img src="images/banner.svg" alt="看板：我們幫助患者找到治癒之路，您也能，了解更多。"></p>
-            <p><a href="/coming_soon.html">
+            <div><img src="images/banner.svg" alt="看板：我們幫助患者找到治癒之路，您也能，了解更多。"></div>
+            <div><a href="/coming_soon.html">
                     <img class="learn-more" src="images/learn.svg" alt="">
-                </a></p>
+                </a></div>
         </section>
         <section>
-            <!-- <p><img src="images/ad.png" alt="看板：品牌Logo，廣告位招租，尺寸：800x480px。"></p> -->
-            <p><img src="images/qq_water.png" alt="看板：金枝玉葉御用ＱＱ水™，了解更多。"></p>
-            <p><img class="description" src="images/qq_water.svg" alt=""></p>
-            <p><a href="/coming_soon.html">
+            <!-- <img src="images/ad.png" alt="看板：品牌Logo，廣告位招租，尺寸：800x480px。"> -->
+            <img src="images/qq_water.png" alt="看板：金枝玉葉御用ＱＱ水™，了解更多。">
+            <div><img class="description" src="images/qq_water.svg" alt=""></div>
+            <div><a href="/coming_soon.html">
                     <img class="learn-more" src="images/learn.svg" alt="">
-                </a></p>
+                </a></div>
         </section>
         <section>
-            <p><img src="images/no_surgery.png" alt="看板：膝關節退化不一定要開刀，了解更多。"></p>
-            <p><img class="description" src="images/no_surgery.svg" alt=""></p>
-            <p><a href="/patient-resources/testimonials/testimonials.html">
+            <img src="images/no_surgery.png" alt="看板：膝關節退化不一定要開刀，了解更多。">
+            <div><img class="description" src="images/no_surgery.svg" alt=""></div>
+            <div><a href="/patient-resources/testimonials/testimonials.html">
                     <img class="learn-more" src="images/learn.svg" alt="">
-                </a></p>
+                </a></div>
         </section>
         <section>
             <img src="images/statement.svg" alt="">
