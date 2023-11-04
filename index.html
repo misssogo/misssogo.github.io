@@ -75,12 +75,32 @@
             max-width: calc(1.618em * var(--line-length) / 4);
             height: auto;
         }
+
+        .span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-family: emoji;
+            color: rgba(0, 0, 0, 0.382);
+            animation: spin-y 2.618s infinite linear;
+        }
+
+        @keyframes spin-y {
+            0% {
+                transform: rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
         <img id="brand" src="images/brand.svg" alt="招牌：金枝御液™偵探醫學 Powered by AI。">
+        <span class="span">🕵️</span>
     </header>
     <main>
         <section>
