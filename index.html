@@ -7,9 +7,9 @@
     <!-- <link rel="manifest" href="app.webmanifest"> -->
     <link rel="apple-touch-icon" href="logo_180x180.png">
     <link rel="icon" href="logo_32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet"> -->
     <title>金枝御液™</title>
     <style>
         * {
@@ -23,6 +23,12 @@
         :root {
             --proportional-spacing: 0.618rem;
             --line-length: 20;
+        }
+
+        @font-face {
+            font-family: "Noto Color Emoji";
+            src: url("/images/NotoColorEmoji-Regular.ttf");
+            font-weight: normal;
         }
 
         body {
@@ -81,10 +87,11 @@
 
         .span {
             position: absolute;
-            top: 2px;
-            left: calc(47.7% - 10px);
+            /* top: 2px; */
+            top: calc(50% - 10.5px);
+            left: calc(47.7% - 11.25px);
             font-family: 'Noto Color Emoji', emoji, sans-serif;
-            /* font-size: 18px; */
+            font-size: 18px;
             color: rgba(0, 0, 0, 0.382);
             animation: spin-y 2.618s infinite linear;
         }
