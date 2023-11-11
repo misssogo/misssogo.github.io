@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>免責聲明</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background-color: gray;
+        }
+
+        :root {
+            --proportional-spacing: 0.618rem;
+        }
+
+        @font-face {
+            font-family: "芫荽";
+            src:
+                local("Iansui Regular"),
+                local("Iansui-Regular"),
+                url("/images/Iansui-Regular.ttf");
+            line-gap-override: 38.2%;
+        }
+
+        body {
+            font-family: "芫荽", 微軟正黑體 !important;
+            background-color: #ececec;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        section {
+            padding: var(--proportional-spacing);
+            padding-bottom: 0;
+        }
+
+        article {
+            background-color: white;
+            font-size: larger;
+            text-align: justify;
+            padding: var(--proportional-spacing);
+        }
+
+        p.heading {
+            padding-left: 2em;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: var(--proportional-spacing);
+            padding: var(--proportional-spacing);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #brand {
+            box-shadow: 0 0.618rem 0.382rem -0.382rem rgba(255, 215, 0, 0.382);
+        }
+
+        ol {
+            padding-inline-start: 2em;
+            list-style-type: trad-chinese-informal;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="brand" src="/images/brand.svg" alt="招牌：金枝御液™偵探醫學 Powered by AI。">
+    </header>
+    <main>
+        <section>
+            <article>
+                <p class="heading">免責聲明</p>
+                <ol>
+                    <li>本網站提供的資訊，包括文字、圖形、圖像和其他資料，僅供資訊和教育目的，內容非為醫療的建議、診斷或治療，不應視為替代合格醫療從業者的專業醫療建議；如有任何醫療狀況疑問，請尋求您的醫生或其他合格的醫療提供者的建議。
+                    </li>
+                    <li>本網站可能討論偵探醫學及其他常規醫學範圍之外的醫療方法，其可能未經廣泛、科學的研究支持，可能不適合所有人；重要的是，請諮詢合格的醫療從業者，以確定任何非常規的醫學治療是否適合您的特定健康需求。
+                    </li>
+                    <li>您的健康和福祉是您的責任，在本網站找到的任何資訊，應作為資源，不應作為醫療決策的唯一依據；做任何醫療決策之前，請諮詢合格的醫療從業者。</li>
+                    <li>儘管我們努力提供正確、最新的資訊，其完整性、準確性、可靠性或適用性，我們不作任何保證或陳述；我們不支持或宣傳特定的治療、產品或療法；對本網站任何資訊的依賴，完全由您自己承擔風險。</li>
+                    <li>在任何情況下，您使用或依賴本網站的內容而導致的任何直接、間接、附帶、特殊或後果性損害，我們概不負責；因而產生的任何索賠或訴訟，您同意將我們免除。</li>
+                    <li>本網站將不時修訂免責聲明並公布之。</li>
+                    <li>經由使用本網站，您承認並同意本免責聲明之條款；如不同意，請勿使用本網站。</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div></div>
+        <a href="#" id="goBackLink">
+            <img src="/images/return.svg" alt="">
+        </a>
+        <script>
+            document.getElementById("goBackLink").addEventListener("click", e => {
+                e.preventDefault();
+                history.back();
+            });
+        </script>
+        <div></div>
+        <div></div>
+        <a href="/">
+            <img src="/images/house.svg" alt="">
+        </a>
+        <div></div>
+        <img src="/images/copyright.svg" alt="">
+        <div></div>
+        <div></div>
+
+    </footer>
+</body>
+
+</html>
